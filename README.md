@@ -53,3 +53,8 @@ The high level requirements for an Image Caption generation using AI/ML project 
 * Development environment: It includes the hardware & software which will help to train, evaluate & optimize our model
 * Evaluation & tuning of model
 * Integration of model with large system or an application
+
+# References #
+* Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
+* https://www.deeplearning.ai/courses/
+* https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
