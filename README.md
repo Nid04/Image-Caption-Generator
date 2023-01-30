@@ -76,3 +76,5 @@ The high level requirements for an Image Caption generation using AI/ML project 
 * Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
 * https://www.deeplearning.ai/courses/
 * https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+* Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
+* Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
