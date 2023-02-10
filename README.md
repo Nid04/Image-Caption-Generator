@@ -76,6 +76,12 @@ The high level requirements for an Image Caption generation using AI/ML project 
 * Evaluation & tuning of model
 * Integration of model with large system or an application
 
+## Use Case Diagram ##
+![ImageCaptionGeneration Usecase Diagram](https://user-images.githubusercontent.com/90881345/218151818-eb30f04a-0e8b-4c23-b874-6cfe42d3886c.jpeg)
+
+## Sequence Diagram ##
+![Image Caption Generation - Sequence Diagram](https://user-images.githubusercontent.com/90881345/218170477-5b1a5c93-2424-4f06-a403-544764948d2a.jpeg)
+
 # References #
 * Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
 * https://www.deeplearning.ai/courses/
