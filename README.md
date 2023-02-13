@@ -80,7 +80,7 @@ The high level requirements for an Image Caption generation using AI/ML project 
 ![ImageCaptionGeneration Usecase Diagram](https://raw.githubusercontent.com/Nid04/Image-Caption-Generation---SYNCHRONY/main/Sequence_Diagram.png?token=GHSAT0AAAAAAB6T7VTXETMKTEIUHKUBTNTKY7JWI6Q)
 
 ## Sequence Diagram ##
-![Image Caption Generation - Sequence Diagram](https://user-images.githubusercontent.com/90881345/218170477-5b1a5c93-2424-4f06-a403-544764948d2a.jpeg)
+![Image Caption Generation - Sequence Diagram](https://raw.githubusercontent.com/Nid04/Image-Caption-Generation---SYNCHRONY/main/Sequence_Diagram.png?token=GHSAT0AAAAAAB6T7VTXETMKTEIUHKUBTNTKY7JWI6Q)
 
 # References #
 * Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
