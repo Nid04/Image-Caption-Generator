@@ -34,11 +34,11 @@ Once the model is trained, it can be used to generate captions for new images.
 
 In many articles such as Image Captioning - A Deep Learning Approach, Artificial Intelligence Based Image Caption Generation, etc used the CNN-LSTM architecture for Image Caption Generation model. In which the CNN is used for recognition and classification of an image where as LSTM is capable of sequence prediction problem which identifies the next word.
 
-Basic of Image Captions
+**Basic of Image Captions**
 
 ![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png)
 
-Model Architecture Overview
+**Model Architecture Overview**
 
 ![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png)
 
