@@ -36,11 +36,11 @@ In many articles such as Image Captioning - A Deep Learning Approach, Artificial
 
 Basic of Image Captions
 
-![image](https://user-images.githubusercontent.com/90881345/215385900-f9400673-cef7-48db-8e26-07d5778a22bd.png)
+![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png)
 
 Model Architecture Overview
 
-![image](https://user-images.githubusercontent.com/90881345/215383371-37381f8b-fb40-4688-acb5-140a0ef3c6fc.png)
+![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png)
 
 The model consist of 3 different stages:
 * Image Feature Extraction: In this stage the feature of an image is extracted by using VGG16 model. VGG16 is a working model for image detection. it consist of 16 layer which includes a pattern of 2 convolution layer and 1 dropout layer, it's fully connected at the end.
