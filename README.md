@@ -79,8 +79,6 @@ The high level requirements for an Image Caption generation using AI/ML project 
 ## Use Case Diagram ##
 ![ImageCaptionGeneration Usecase Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Usecase_diagram.png)
 
-In this diagram, the user can perform four actions: upload an image, enter a caption, view results, and provide feedback. The use case "Upload Image" allows the user to upload an image, while the use case "Enter Caption" allows the user to enter a caption. The use case "View Results" displays the generated tags and confidence scores, while the use case "Provide Feedback" allows the user to provide feedback on the results. The system extracts features and text from the image, generates tags and confidence scores, and can learn from user feedback.
-
 ## Sequence Diagram ##
 ![Image Caption Generation - Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png)
 
