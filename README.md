@@ -77,7 +77,7 @@ The high level requirements for an Image Caption generation using AI/ML project 
 * Integration of model with large system or an application
 
 ## Use Case Diagram ##
-![ImageCaptionGeneration Usecase Diagram](https://raw.githubusercontent.com/Nid04/Image-Caption-Generation---SYNCHRONY/main/Sequence_Diagram.png?token=GHSAT0AAAAAAB6T7VTXETMKTEIUHKUBTNTKY7JWI6Q)
+![ImageCaptionGeneration Usecase Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Usecase_diagram.png)
 
 ## Sequence Diagram ##
 ![Image Caption Generation - Sequence Diagram](https://raw.githubusercontent.com/Nid04/Image-Caption-Generation---SYNCHRONY/main/Sequence_Diagram.png?token=GHSAT0AAAAAAB6T7VTXII25V5XW2GLV27CCY7JWMGA)
