@@ -79,12 +79,12 @@ The high level requirements for an Image Caption generation using AI/ML project 
 ## Use Case Diagram ##
 ![ImageCaptionGeneration Usecase Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Usecase_diagram.png)
 
-As shown in the diagram, the user can either submit an image and check the outcomes as well as can give feedback. The user can upload an image using the "Upload Image" use case, and they can input a caption using the "Enter Caption" use case which allow user to offer feedback on the outcomes, the use case "View Results" shows the generated tags and confidence scores. The algorithm derives tags and confidence scores, pulls features and text from the image, and may learn from user comments.
+As shown in the diagram, the user can either submit an image and check the outcomes as well as can give feedback. The user can upload an image using the "Upload Image" use case, and they can input a feedback using the "Give Feedback" use case which allow user to offer feedback on the image, the use case "Display output" shows the generated tags and confidence scores. The algorithm derives tags and confidence scores, pulls features and text from the image, and may learn from user comments.
 
 ## Sequence Diagram ##
 ![Image Caption Generation - Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png)
 
-In this illustration, the user uses a web application to upload an image and provide a caption. The Image Captioning Model receives the image and caption from the web application and uses them to extract text and features, create tags, and calculate confidence scores. The user can give input after viewing the findings on the online application. The user feedback will help the image captioning model become more accurate.
+In this illustration, the user uses a web application to upload an image and provide a feedback. The Image Captioning Model receives the image from the web application and uses them to extract text and features, create tags, and calculate confidence scores. The user can give input after viewing the findings on the online application. The user feedback will help the image captioning model become more accurate.
 
 # References #
 * Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
