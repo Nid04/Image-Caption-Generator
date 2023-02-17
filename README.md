@@ -100,6 +100,7 @@ The web application built using the Django web framework for uploading an image 
 * Clone the repository to your local machine.
 * Navigate to the project directory using the command line.
 * Start the Django development server by running the following command:
+
   "python manage.py runserver"
 * Open a web browser and go to http://localhost:8000/ to access the application.
 
