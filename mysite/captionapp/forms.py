@@ -5,3 +5,4 @@ class ImageUploadForm(forms.ModelForm):
     class Meta:
         model = Image
         fields = ['image', 'feedback']
+        widget = forms.FileInput
