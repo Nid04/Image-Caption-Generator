@@ -1,0 +1,25 @@
+body { 
+	background-color: coral;
+}
+ 
+.navbar-custom {
+	background-color: #D3D3D3;
+}
+
+.rounded-border {
+	border-radius: 10px;
+}
+
+.img-size {
+	height:450px;
+	width: 800px;
+	border: solid black 5px;
+}
+
+.align {
+	margin-left:250px;
+}
+
+.padding-left{
+	margin-left:10px;
+}
