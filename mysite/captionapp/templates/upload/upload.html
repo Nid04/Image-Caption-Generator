@@ -8,9 +8,13 @@
           {% csrf_token %}
           {{ form.image}}
           <button type="submit" class="rounded-border value={{execute_ts}}">Upload</button>
-          <br><br>
+        </form>
+        <form method="post" enctype="multipart/form-data" class="mt-5">
+          {% csrf_token %}
           <label for="feedback">Feedback:</label>
           <input type="text" id="feedback" name="feedback">
+          <input type="submit" value="Submit">
+          <input type="reset">
         </form>
       </div>
       <center>
