@@ -6,7 +6,7 @@ import os
 import pickle
 import numpy as np
 import csv
-from django.http import HttpResponse
+from django.http import JsonResponse, HttpResponse
 
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
@@ -21,23 +21,21 @@ model = load_model(os.path.join(WORKING_DIR, 'best_model.h5'))
 
 # still in progress
 def feedback(request):
-    if request.metthod == 'POST':
-        form = ImageUploadForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            img_obj = form.instance
-            file_name = img_obj.image
-            print(request.POST.get('feedback'))
-            response = HttpResponse(
-                content_type='text/csv',
-                headers={'Content-Disposition': 'attachment; filename="user_dataset.csv'},
-            )
-            writer = csv.writer(response)
-            writer.writerow([file_name, request.POST.get('feedback')])
-            return render(request, 'upload/upload.html', {'form': form, 'img_obj': img_obj})
-    return render(request, 'upload/upload.html', {'form': form})
+    if request.method == 'POST':
+        image_filename = request.POST.get('image_filename')
+        feedback_text = request.POST.get('feedback')
+        if image_filename and feedback_text:
+            # Save feedback to CSV
+            with open("user_dataset.csv", mode="a", newline='') as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([image_filename, feedback_text])
 
-# still in progress
+            # Return JSON response for AJAX request
+            return JsonResponse({'message': 'Feedback submitted successfully.'})
+        else:
+            return JsonResponse({'message': 'Invalid form data.'}, status=400)
+
+    return JsonResponse({'message': 'Invalid request.'}, status=400)
 
 def upload_image(request):
     if request.method == 'POST':

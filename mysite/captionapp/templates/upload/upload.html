@@ -4,25 +4,74 @@
 
     <div class="container">
       <div class="align">
-        <form method="post" enctype="multipart/form-data" class="mt-5">
+        <form id="upload-form" method="post" enctype="multipart/form-data" class="mt-5">
           {% csrf_token %}
-          {{ form.image}}
+          {{ form.image }}
           <button type="submit" class="rounded-border value={{execute_ts}}">Upload</button>
         </form>
-        <form method="post" enctype="multipart/form-data" class="mt-5">
+        <form id="feedback-form" method="post" enctype="multipart/form-data" class="mt-5">
           {% csrf_token %}
+          <input type="hidden" id="image-filename" name="image_filename" value="{% if img_obj %}{{ img_obj.image }}{% endif %}">
           <label for="feedback">Feedback:</label>
-          <input type="text" id="feedback" name="feedback">
-          <input type="submit" value="Submit">
-          <input type="reset">
-        </form>
+          <input type="text" id="feedback" name="feedback" size="35">
+          <input id="submit-feedback" type="submit" value="Submit">
+          <input type="reset" id="reset-button">
+          <div class="feedback-buttons">
+            <button id="thumbs-up" type="button">👍</button>
+            <button id="thumbs-down" type="button">👎</button>
+        </div>
+      </form>
       </div>
       <center>
         {% if img_obj %}
-          <img class="rounded img-size mt-2" src="{{ img_obj.image.url}}" alt="connect">
-          <h3 class="text-black mt-4" id="result-text">{{caption}}</h3>
+          <img id="uploaded-image" class="rounded img-size mt-2" src="{{ img_obj.image.url }}" alt="connect">
+          <h3 id="caption-text" class="text-black mt-4">{{ caption }}</h3>
+        {% else %}
+          <img id="uploaded-image" class="rounded img-size mt-2" style="display:none;" alt="connect">
+          <h3 id="caption-text" class="text-black mt-4" style="display:none;"></h3>
         {% endif %}
       </center>
     </div>
+
+    <script>
+      function submitFeedback(form) {
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "{% url 'feedback' %}", true);
+        xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log("Feedback submitted successfully.");
+            // You can perform any other actions here if needed
+          }
+        };
+        xhr.send(formData);
+    }
+
+    document.getElementById("feedback-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      submitFeedback(event.target);
+    
+    });
+    
+    document.getElementById("reset-button").addEventListener("click", function () {
+      // Clear the feedback input field
+      document.getElementById("feedback").value = "";
+
+      // Remove the image and hide the caption
+      document.getElementById("uploaded-image").style.display = "none";
+      document.getElementById("uploaded-image").src = "";
+      document.getElementById("caption-text").style.display = "none";
+      document.getElementById("caption-text").textContent = "";
+    });
+
+    //document.getElementById("thumbs-up").addEventListener("click", function () {
+    //  document.getElementById("feedback").value = "👍";
+    //});
+
+    //document.getElementById("thumbs-down").addEventListener("click", function () {
+    //  document.getElementById("feedback").value = "👎";
+    //});
+  </script>
 
   {% endblock content %}
