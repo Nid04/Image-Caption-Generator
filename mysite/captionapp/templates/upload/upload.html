@@ -40,9 +40,15 @@
         xhr.open("POST", "{% url 'feedback' %}", true);
         xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
         xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log("Feedback submitted successfully.");
-            // You can perform any other actions here if needed
+          if (xhr.readyState === 4){
+            if (xhr.status === 200) {
+              console.log("Feedback submitted successfully.");
+              // You can perform any other actions here if needed
+              alert("Feedback submitted successfully.");
+            } else {
+              console.log("Feedback not submitted");
+              alert("An error occurred while submitting feedback. Please try again.");
+            }
           }
         };
         xhr.send(formData);

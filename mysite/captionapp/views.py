@@ -22,7 +22,7 @@ model = load_model(os.path.join(WORKING_DIR, 'best_model.h5'))
 # still in progress
 def feedback(request):
     if request.method == 'POST':
-        image_filename = request.POST.get('image_filename')
+        image_filename = request.POST.get('image_filename').split('/')[-1]
         feedback_text = request.POST.get('feedback')
         if image_filename and feedback_text:
             # Save feedback to CSV
