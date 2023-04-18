@@ -127,6 +127,24 @@ The model used for this project is a deep neural network consisting of an image 
 * Matplotlib
 * NLTK
 
+# Demo #
+
+* Screenshot 1:
+
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232843583-58b35760-5976-47f2-bd01-4a315f43054a.png">
+
+* Screenshot 2:
+
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232844510-fe2136e6-6c30-4bf6-a5b7-53412731972b.png">
+
+* Screenshot 3:
+
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853507-e99596f9-1c67-49d1-ae06-18e355053cb5.png">
+
+* Screenshot 4:
+
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853612-625352c4-7818-4d1f-a9d1-075b5281739e.png">
+
 # References #
 * Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
 * https://www.deeplearning.ai/courses/
