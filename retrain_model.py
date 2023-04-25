@@ -5,12 +5,9 @@ from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import load_model
-from tensorflow.keras.optimizers import Adam
-import tensorflow as tf
-tf.config.run_functions_eagerly(False)
+from keras.layers import Input, Dense, LSTM, Embedding, Dropout, add
 
 
 BASE_DIR = os.getcwd()
@@ -114,6 +111,59 @@ def data_generator(data_keys, mapping, features, tokenizer, max_length, vocab_si
                 x1, x2, y = list(), list(), list()
                 n = 0
 
+# Function to selectively transfer weights between models
+def transfer_weights(source_model, target_model):
+    target_layers = {layer.name: layer for layer in target_model.layers}
+    for layer in source_model.layers:
+        if layer.name in target_layers and layer.get_weights():
+            if layer.get_weights()[0].shape == target_layers[layer.name].get_weights()[0].shape:
+                target_layers[layer.name].set_weights(layer.get_weights())
+
+def define_model():
+    # loading pretrained model
+    old_model_path = BASE_DIR + "/kaggle/working/best_model.h5"
+    old_model = load_model(old_model_path)
+    #plot_model(pretrained_model, show_shapes=True)
+    # Create a new model with updated max_length and vocab_size
+    # Image feature model
+    inputs1 = Input(shape=(4096,))
+    fe1 = Dropout(0.4)(inputs1)
+    fe2 = Dense(256, activation='relu')(fe1)
+
+    # Sequence feature layers
+    inputs2 = Input(shape=(max_length,))
+    se1 = Embedding(vocab_size, 256, mask_zero=True)(inputs2)
+    se2 = Dropout(0.4)(se1)
+    se3 = LSTM(256)(se2)
+
+    # Decoder model
+    decoder1 = add([fe2, se3])
+    decoder2 = Dense(256, activation='relu')(decoder1)
+    outputs = Dense(vocab_size, activation='softmax')(decoder2)
+
+    new_model = Model(inputs=[inputs1, inputs2], outputs=outputs)
+    new_model.compile(loss='categorical_crossentropy', optimizer='adam')
+
+    # Load the pre-trained weights into the new model
+    transfer_weights(old_model, new_model)
+    return new_model
+
+def train_model():
+    epochs = 20
+    batch_size = 3
+    image_ids = list(mapping.keys())
+    train = image_ids
+    steps = len(train) // batch_size
+
+    for i in range(epochs):
+        # create data generator
+        generator = data_generator(train, mapping, features, tokenizer, max_length, vocab_size, batch_size)
+        # fit for one epoch
+        new_model = define_model()
+        new_model.fit(generator, epochs=1, steps_per_epoch=steps, verbose=1)
+
+    new_model.save(BASE_DIR + '/kaggle/working/retrain_model1.h5')
+
 features = extract_features()
 mapping = load_caption()
 clean(mapping)
@@ -137,24 +187,4 @@ vocab_size = len(tokenizer.word_index)+1
 with open(BASE_DIR + "/kaggle/working/tokenizer1.pkl", "wb") as f:
     pickle.dump(tokenizer, f)
 
-
-# loading pretrained model
-pretrained_model_path = BASE_DIR + "/kaggle/working/best_model.h5"
-pretrained_model = load_model(pretrained_model_path)
-
-new_learning_rate = 1e-5 # to add less weight to the trained model
-optimizer = Adam(learning_rate=new_learning_rate)
-pretrained_model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-
-epochs = 10
-batch_size = 64
-train = list(mapping.keys())
-steps = len(train) // batch_size
-
-for i in range(epochs):
-    # create data generator
-    generator = data_generator(train, mapping, features, tokenizer, max_length, vocab_size, batch_size)
-    # fit for one epoch
-    pretrained_model.fit(generator, epochs=1, steps_per_epoch=steps, verbose=1)
-
-pretrained_model.save(BASE_DIR + '/kaggle/working/retrain_model1.h5')
+train_model()
