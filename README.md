@@ -13,9 +13,9 @@ Name: Nidhi Sinha
 
 Email: sinhan1@udayton.edu
 
-### Project Name: Image Caption Generation using AI/ML
+#### Project Name: Image Caption Generation using AI/ML
 
-### Company: Synchrony
+#### Company: Synchrony
 
 #### Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
 
