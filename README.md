@@ -133,9 +133,6 @@ Open the highlighted URL in your browser
 ![image](https://user-images.githubusercontent.com/90881345/235221052-8cda8d93-2fd3-470c-b330-56bb4a8330ad.png)
 
 
-  "python manage.py runserver"
-* Open a web browser and go to http://localhost:8000/ to access the application.
-
 ## Caption Generation Model ##
 
 The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
@@ -156,6 +153,16 @@ The model used for this project is a deep neural network consisting of an image 
 * Pickle
 * tqdm
 * NumPy
+
+## User Feedback Feature ##
+
+User Feedback feature will help to get the feedback from user end for fine tuning our image captioning model. It collects and store the user given captions and store it into a dataset. Then, preodically need to retrain the existing model for enhanced prediction. To implement this feature we use Human-in-the-loop learning algorithm. This Machine Learning approach involving human expertise for adaptable, ethical decision-making and continuous model improvement. The user inputs helps our image captioning model for continuous learning and optimization.
+
+## User Feedback Architecture ##
+
+The below image will show the implementation of the user feedback concept in our image captioning application.
+
+![image](https://user-images.githubusercontent.com/90881345/235231521-5ca1be9c-78fb-44ac-ba49-dfa0f1e85ba2.png)
 
 
 # Demo #
