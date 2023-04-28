@@ -88,50 +88,13 @@ In this illustration, the user uses a web application to upload an image and pro
 
 # Implementation #
 
-## User Interface ##
+## User Interface Installation and Setup ##
 
 The web application built using the Django web framework for uploading an image & to provide feedback caption on image.
 
 **Prerequisites**
 * Python 3.x
 * Django
-
-**Installation**
-* Clone the repository to your local machine.
-* Navigate to the project directory using the command line.
-* Start the Django development server by running the following command:
-
-  "python manage.py runserver"
-* Open a web browser and go to http://localhost:8000/ to access the application.
-
-## Caption Generation Model ##
-
-The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
-
-**Dataset**
- 
-The dataset used for this project is the Flickr8k dataset (https://forms.illinois.edu/sec/1713398), which contains 8,000 images and five captions per image. 
-The dataset is preprocessed by extracting the features from the images using a pre-trained VGG16 model and cleaning and tokenizing the captions.
-
-**Model**
-
-The model used for this project is a deep neural network consisting of an image encoder and a caption decoder. The image encoder uses a pre-trained VGG16 model to extract features from the input image. The caption decoder consists of an embedding layer, an LSTM layer, and two dense layers.
-
-**Prerequisites**
-
-* Python 3.x
-* Tensorflow
-* Pickle
-* tqdm
-* NumPy
-
-# Installation and Setup #
-
-Follow these steps to set up the Image Caption Generation project on your local machine:
-
-**Prerequisites**
-
-* Python 3 or higher
 * pip (Python Package Installer)
 
 **Step 1: Clone the repository**
@@ -168,6 +131,31 @@ python manage.py runserver
 
 Open the highlighted URL in your browser
 ![image](https://user-images.githubusercontent.com/90881345/235221052-8cda8d93-2fd3-470c-b330-56bb4a8330ad.png)
+
+
+  "python manage.py runserver"
+* Open a web browser and go to http://localhost:8000/ to access the application.
+
+## Caption Generation Model ##
+
+The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
+
+**Dataset**
+ 
+The dataset used for this project is the Flickr8k dataset (https://forms.illinois.edu/sec/1713398), which contains 8,000 images and five captions per image. 
+The dataset is preprocessed by extracting the features from the images using a pre-trained VGG16 model and cleaning and tokenizing the captions.
+
+**Model**
+
+The model used for this project is a deep neural network consisting of an image encoder and a caption decoder. The image encoder uses a pre-trained VGG16 model to extract features from the input image. The caption decoder consists of an embedding layer, an LSTM layer, and two dense layers.
+
+**Prerequisites**
+
+* Python 3.x
+* Tensorflow
+* Pickle
+* tqdm
+* NumPy
 
 
 # Demo #
