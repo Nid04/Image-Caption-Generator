@@ -1,7 +1,7 @@
 ## CPS 595-P1 Software Engineering Project
 
-## University of Dayton
-### Department of Computer Science
+### University of Dayton
+#### Department of Computer Science
 
 #### Instructor(s):
 * Dr. Phu Phung 
