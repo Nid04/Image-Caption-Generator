@@ -15,8 +15,7 @@ Email: sinhan1@udayton.edu
 
 # Image Caption Generation using AI/ML #
 
-# Company #
-* Name: Synchrony
+### Company: Synchrony
 
 # Project Management Information #
 Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
