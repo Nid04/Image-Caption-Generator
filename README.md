@@ -1,6 +1,6 @@
 ## CPS 595-P1 Software Engineering Project
 
-### University of Dayton
+## University of Dayton
 ### Department of Computer Science
 
 #### Instructor(s):
