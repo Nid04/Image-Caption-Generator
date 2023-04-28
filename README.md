@@ -109,7 +109,7 @@ The web application built using the Django web framework for uploading an image 
 The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
 
 **Dataset**
-
+ 
 The dataset used for this project is the Flickr8k dataset (https://forms.illinois.edu/sec/1713398), which contains 8,000 images and five captions per image. 
 The dataset is preprocessed by extracting the features from the images using a pre-trained VGG16 model and cleaning and tokenizing the captions.
 
@@ -126,6 +126,30 @@ The model used for this project is a deep neural network consisting of an image 
 * NumPy
 * Matplotlib
 * NLTK
+
+# Installation and Setup #
+
+Follow these steps to set up the Image Caption Generation project on your local machine:
+
+**Prerequisites**
+
+* Python 3 or higher
+* pip (Python Package Installer)
+
+**Step 1: Clone the repository**
+```
+git clone https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY
+```
+
+Navigate to the project directory:
+```
+cd Image-Caption-Generation---SYNCHRONY
+```
+
+**Step 2: Install Required Dependencies**
+
+Install the required dependencies using pip:
+
 
 # Demo #
 
