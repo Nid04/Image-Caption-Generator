@@ -1,0 +1,9 @@
+numpy
+pickle
+tensorflow
+os
+schedule
+time
+subprocess
+django
+csv
