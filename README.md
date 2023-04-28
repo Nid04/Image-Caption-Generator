@@ -124,8 +124,6 @@ The model used for this project is a deep neural network consisting of an image 
 * Pickle
 * tqdm
 * NumPy
-* Matplotlib
-* NLTK
 
 # Installation and Setup #
 
@@ -149,6 +147,27 @@ cd Image-Caption-Generation---SYNCHRONY
 **Step 2: Install Required Dependencies**
 
 Install the required dependencies using pip:
+```
+pip install -r requirements.txt
+```
+
+**Step 3: Run the Application**
+
+Navigate to mysite directory:
+```
+cd mysite
+```
+
+Run the command:
+```
+python manage.py migrate
+```
+```
+python manage.py runserver
+```
+
+Open the highlighted URL in your browser
+![image](https://user-images.githubusercontent.com/90881345/235221052-8cda8d93-2fd3-470c-b330-56bb4a8330ad.png)
 
 
 # Demo #
