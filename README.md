@@ -17,9 +17,9 @@ Email: sinhan1@udayton.edu
 
 ### Company: Synchrony
 
-### Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
+#### Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
 
-### Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
+#### Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
 
 # Overview #
 Image caption generation is a task in which a machine learning model is trained to generate natural language descriptions of an image. 
