@@ -13,14 +13,13 @@ Name: Nidhi Sinha
 
 Email: sinhan1@udayton.edu
 
-# Image Caption Generation using AI/ML #
+### Project Name: Image Caption Generation using AI/ML
 
 ### Company: Synchrony
 
-# Project Management Information #
-Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
+### Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
 
-Source code repository (private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
+### Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
 
 # Overview #
 Image caption generation is a task in which a machine learning model is trained to generate natural language descriptions of an image. 
