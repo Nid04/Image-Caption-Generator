@@ -1,17 +1,15 @@
 # CPS 595-P1 Software Engineering Project #
 
-University of Dayton
-Department of Computer Science
+### University of Dayton
+### Department of Computer Science
 
-Instructor(s):
+#### Instructor(s):
 * Dr. Phu Phung 
 * Dr. Ahmed El Ouadrhiri
 
-This is the repository for the CPS 595-P1 Software Engineering Project.
+#### Name: Nidhi Sinha
 
-Name: Nidhi Sinha
-
-Email: sinhan1@udayton.edu
+#### Email: sinhan1@udayton.edu
 
 #### Project Name: Image Caption Generation using AI/ML
 
