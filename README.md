@@ -41,7 +41,7 @@ In many articles such as Image Captioning - A Deep Learning Approach [1], Artifi
 **Basic of Image Captions**
 
 ![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png "Basic of Image Captions")
-<center> Figure 1: Basic of Image Captions </center>
+Figure 1: Basic of Image Captions
 
 **Model Architecture Overview**
 
@@ -107,11 +107,11 @@ The model used for this project is a deep neural network consisting of an image 
 
 **Prerequisites**
 
-* Python 3.x
-* Tensorflow
+* Python 3.9.6
+* Tensorflow 2.11.0
 * Pickle
 * tqdm
-* NumPy
+* NumPy 1.21.5
 
 ## User Feedback Feature ##
 
@@ -121,15 +121,16 @@ User Feedback feature will help to get the feedback from user end for fine tunin
 
 The below image will show the implementation of the user feedback concept in our image captioning application.
 
-![image](https://user-images.githubusercontent.com/90881345/235231521-5ca1be9c-78fb-44ac-ba49-dfa0f1e85ba2.png)
+![Figure 5: User Feedback Architecture](https://user-images.githubusercontent.com/90881345/235231521-5ca1be9c-78fb-44ac-ba49-dfa0f1e85ba2.png "User Feedback Architecture")
+Figure 5: User Feedback Architecture
 
 ## User Interface Installation and Setup ##
 
 The web application built using the Django web framework for uploading an image & to provide feedback caption on image.
 
 **Prerequisites**
-* Python 3.x
-* Django
+* Python 3.9.6
+* Django 4.1.6
 * pip (Python Package Installer)
 
 **Step 1: Clone the repository**
@@ -166,6 +167,7 @@ python manage.py runserver
 
 Open the highlighted URL in your browser
 ![image](https://user-images.githubusercontent.com/90881345/235221052-8cda8d93-2fd3-470c-b330-56bb4a8330ad.png)
+Figure 6: Console
 
 
 ## Demo ##
