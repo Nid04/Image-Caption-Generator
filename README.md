@@ -41,7 +41,7 @@ In many articles such as Image Captioning - A Deep Learning Approach [1], Artifi
 **Basic of Image Captions**
 
 ![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png "Basic of Image Captions")
-Figure 1: Basic of Image Captions
+<center> Figure 1: Basic of Image Captions </center>
 
 **Model Architecture Overview**
 
