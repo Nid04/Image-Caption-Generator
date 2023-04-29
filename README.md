@@ -1,32 +1,42 @@
 ## CPS 595-P1 Software Engineering Project
 
-### University of Dayton
-#### Department of Computer Science
+University of Dayton
 
-#### Instructor(s):
-* Dr. Phu Phung 
-* Dr. Ahmed El Ouadrhiri
+Department of Computer Science
 
-#### Student Name: Nidhi Sinha (sinhan1@udayton.edu)
+CPS 595-P1 Software Engineering Project, Final Year
 
-#### Project Name: Image Caption Generation using AI/ML
+Instructor(s):
+- Dr. Ahmed El Ouadrhiri
+- Dr. Phu Phung 
 
-#### Company: Synchrony
+## Software Engineering Project 
 
-#### Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
+# Image Caption Generation using AI/ML with User Feedback
 
-#### Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
+## Student Name: Nidhi Sinha (sinhan1@udayton.edu)
+
+# Company Mentors
+
+Arpan Bhattacharya; Rajanikanth Bhagavan Yadav; Anil Kumar
+
+Synchrony Bank
+
+# Project Management Information
+
+Project Management board (Private access): https://trello.com/b/nzILGiVw/image-caption-generation-using-ai-ml/
+
+Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
 
 # Overview #
-Image caption generation is a task in which a machine learning model is trained to generate natural language descriptions of an image. 
+Image caption generation is a project in which a machine learning model is trained to generate natural language descriptions of an image. 
 The goal is to create a model that can understand the content of an image and generate a caption that accurately describes it. 
 There are several techniques that can be used for image caption generation, including neural networks and deep learning. 
-One popular approach is to use a convolutional neural network (CNN) to extract features from the image, and a recurrent neural network (RNN) to generate the caption. 
-Once the model is trained, it can be used to generate captions for new images.
+The project involves utilizing a convolutional neural network (CNN) to extract features from an image and a recurrent neural network (RNN) to generate a caption. Upon completion of training, the model can then be used to generate captions for new images.
 
 # Background #
 
-In many articles such as Image Captioning - A Deep Learning Approach, Artificial Intelligence Based Image Caption Generation, etc used the CNN-LSTM architecture for Image Caption Generation model. In which the CNN is used for recognition and classification of an image where as LSTM is capable of sequence prediction problem which identifies the next word.
+In many articles such as Image Captioning - A Deep Learning Approach [1], Artificial Intelligence Based Image Caption Generation [2], etc used the CNN-LSTM architecture for Image Caption Generation model. In which the CNN is used for recognition and classification of an image where as LSTM is capable of sequence prediction problem which identifies the next word.
 
 **Basic of Image Captions**
 
@@ -47,18 +57,10 @@ After successful generation of model will train the model on Flicker-8k dataset 
 
 
 # Project Context & Scope #
-The context for an Image Caption generation using AI/ML project is to automatically generate natural language descriptions for images.
 
-The scope of this project will include the following steps:
+The primary motivation for image caption generation is to enhance the accessibility and usability of visual content, especially for individuals with visual impairments. It can also be used to assist in content indexing and retrieval, as well as providing descriptive information for images in online publications, social media, and e-commerce websites.
 
-* Collecting, cleaning and preprocessing a dataset of images and their corresponding captions.
-* Design and implement a model for image caption generation.
-* Train the model on the dataset.
-* Evaluation of the model on the dateset.
-* Optimizing the model.
-* Integartion of the model with the main application.
-
-The main objective of our project is to generate captions that accurately describe an image.
+The scope of image caption generation can range from generating basic captions that describe the content of an image to generating detailed and contextualized captions that convey emotions and sentiments. The applications can also vary, from educational and instructional content to entertainment and social media sharing. Overall, the image caption generation technology has the potential to improve the user experience and accessibility of visual content across various domains.
 
 ## High-level Requirements ##
 
@@ -178,8 +180,9 @@ The below image will show the implementation of the user feedback concept in our
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853612-625352c4-7818-4d1f-a9d1-075b5281739e.png">
 
 # References #
-* Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
-* https://www.deeplearning.ai/courses/
-* https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
-* Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
-* Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
+1. Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
+2. Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
+3. Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
+4. https://www.deeplearning.ai/courses/
+5. https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+
