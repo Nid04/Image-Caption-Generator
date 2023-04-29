@@ -40,11 +40,12 @@ In many articles such as Image Captioning - A Deep Learning Approach [1], Artifi
 
 **Basic of Image Captions**
 
-![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png)
+![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png "Figure 1: Basic of Image Captions")
+
 
 **Model Architecture Overview**
 
-![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png)
+![image](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png "Figure 2: Architecture of Captioning")
 
 The model consist of 3 different stages:
 * Image Feature Extraction: In this stage the feature of an image is extracted by using VGG16 model. VGG16 is a working model for image detection. it consist of 16 layer which includes a pattern of 2 convolution layer and 1 dropout layer, it's fully connected at the end.
@@ -73,16 +74,52 @@ The high level requirements for an Image Caption generation using AI/ML project 
 * Integration of model with large system or an application
 
 ## Use Case Diagram ##
-![ImageCaptionGeneration Usecase Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Usecase_diagram.png)
 
-As shown in the diagram, the user can either submit an image and check the outcomes as well as can give feedback. The user can upload an image using the "Upload Image" use case, and they can input a feedback using the "Give Feedback" use case which allow user to offer feedback on the image, the use case "Display output" shows the generated tags and confidence scores. The algorithm derives tags and confidence scores, pulls features and text from the image, and may learn from user comments.
+In the provided diagram, users have the option to submit an image and receive corresponding outcomes, as well as provide feedback on the results. By utilizing the "Upload Image" use case, users can upload their desired image, while the "Give Feedback" use case enables them to offer feedback on the generated tags. The "Display Output" use case displays the generated tags and corresponding confidence scores. The algorithm utilizes the image to extract relevant features and text, and can learn from user comments to improve its performance.
+
+![image](https://user-images.githubusercontent.com/90881345/235277614-afd1f11f-f3ca-4eee-b46d-98bc98d9e1f7.png "Figure 3: Use Case Diagram")
+
 
 ## Sequence Diagram ##
-![Image Caption Generation - Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png)
 
-In this illustration, the user uses a web application to upload an image and provide a feedback. The Image Captioning Model receives the image from the web application and uses them to extract text and features, create tags, and calculate confidence scores. The user can give input after viewing the findings on the online application. The user feedback will help the image captioning model become more accurate.
+The given image depicts a scenario where a user interacts with a web application to upload an image and provide feedback. The Image Captioning Model then processes the uploaded image to extract relevant features and text, generate corresponding tags, and calculate confidence scores. Upon viewing the results on the web application, the user can offer feedback, which in turn helps to enhance the accuracy of the Image Captioning Model.
+
+![Image Caption Generation - Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png "Figure 4: Sequence Diagram")
 
 # Implementation #
+
+The project comprises of two primary components: one focuses on developing and training the image caption generation model, while the other concentrates on designing the user feedback component.
+
+## Caption Generation Model ##
+
+The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
+
+**Dataset**
+ 
+The dataset used for this project is the Flickr8k [3] & Flickr30k [4] dataset, which contains 8,000 images and five captions per image.
+The dataset is preprocessed by extracting the features from the images using a pre-trained VGG16 model and cleaning and tokenizing the captions.
+
+**Model**
+
+The model used for this project is a deep neural network consisting of an image encoder and a caption decoder. The image encoder uses a pre-trained VGG16 model to extract features from the input image. The caption decoder consists of an embedding layer, an LSTM layer, and two dense layers.
+
+**Prerequisites**
+
+* Python 3.x
+* Tensorflow
+* Pickle
+* tqdm
+* NumPy
+
+## User Feedback Feature ##
+
+User Feedback feature will help to get the feedback from user end for fine tuning our image captioning model. It collects and store the user given captions and store it into a dataset. Then, preodically need to retrain the existing model for enhanced prediction. To implement this feature we use Human-in-the-loop learning algorithm. This Machine Learning approach involving human expertise for adaptable, ethical decision-making and continuous model improvement. The user inputs helps our image captioning model for continuous learning and optimization.
+
+**User Feedback Architecture**
+
+The below image will show the implementation of the user feedback concept in our image captioning application.
+
+![image](https://user-images.githubusercontent.com/90881345/235231521-5ca1be9c-78fb-44ac-ba49-dfa0f1e85ba2.png)
 
 ## User Interface Installation and Setup ##
 
@@ -129,39 +166,7 @@ Open the highlighted URL in your browser
 ![image](https://user-images.githubusercontent.com/90881345/235221052-8cda8d93-2fd3-470c-b330-56bb4a8330ad.png)
 
 
-## Caption Generation Model ##
-
-The model is trained on a dataset of images and corresponding captions and can generate captions for new images that it has not seen before.
-
-**Dataset**
- 
-The dataset used for this project is the Flickr8k dataset (https://forms.illinois.edu/sec/1713398), which contains 8,000 images and five captions per image. 
-The dataset is preprocessed by extracting the features from the images using a pre-trained VGG16 model and cleaning and tokenizing the captions.
-
-**Model**
-
-The model used for this project is a deep neural network consisting of an image encoder and a caption decoder. The image encoder uses a pre-trained VGG16 model to extract features from the input image. The caption decoder consists of an embedding layer, an LSTM layer, and two dense layers.
-
-**Prerequisites**
-
-* Python 3.x
-* Tensorflow
-* Pickle
-* tqdm
-* NumPy
-
-## User Feedback Feature ##
-
-User Feedback feature will help to get the feedback from user end for fine tuning our image captioning model. It collects and store the user given captions and store it into a dataset. Then, preodically need to retrain the existing model for enhanced prediction. To implement this feature we use Human-in-the-loop learning algorithm. This Machine Learning approach involving human expertise for adaptable, ethical decision-making and continuous model improvement. The user inputs helps our image captioning model for continuous learning and optimization.
-
-## User Feedback Architecture ##
-
-The below image will show the implementation of the user feedback concept in our image captioning application.
-
-![image](https://user-images.githubusercontent.com/90881345/235231521-5ca1be9c-78fb-44ac-ba49-dfa0f1e85ba2.png)
-
-
-# Demo #
+## Demo ##
 
 * Screenshot 1:
 
@@ -182,7 +187,8 @@ The below image will show the implementation of the user feedback concept in our
 # References #
 1. Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
 2. Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
-3. Image & Caption dataset: https://www.kaggle.com/datasets/adityajn105/flickr8k
-4. https://www.deeplearning.ai/courses/
-5. https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+3. https://www.kaggle.com/datasets/adityajn105/flickr8k
+4. https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset
+5. https://www.deeplearning.ai/courses/
+6. https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
 
