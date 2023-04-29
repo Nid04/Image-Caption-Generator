@@ -40,12 +40,12 @@ In many articles such as Image Captioning - A Deep Learning Approach [1], Artifi
 
 **Basic of Image Captions**
 
-![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png "Figure 1: Basic of Image Captions")
+![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img1.png "Basic of Image Captions")
 
 
 **Model Architecture Overview**
 
-![Figure 2: Architecture of Captioning](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png "Figure 2: Architecture of Captioning")
+![Figure 2: Architecture of Captioning](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png "Architecture of Captioning")
 
 The model consist of 3 different stages:
 * Image Feature Extraction: In this stage the feature of an image is extracted by using VGG16 model. VGG16 is a working model for image detection. it consist of 16 layer which includes a pattern of 2 convolution layer and 1 dropout layer, it's fully connected at the end.
@@ -77,14 +77,14 @@ The high level requirements for an Image Caption generation using AI/ML project 
 
 In the provided diagram, users have the option to submit an image and receive corresponding outcomes, as well as provide feedback on the results. By utilizing the "Upload Image" use case, users can upload their desired image, while the "Give Feedback" use case enables them to offer feedback on the generated tags. The "Display Output" use case displays the generated tags and corresponding confidence scores. The algorithm utilizes the image to extract relevant features and text, and can learn from user comments to improve its performance.
 
-![Figure 3: Use Case Diagram](https://user-images.githubusercontent.com/90881345/235277614-afd1f11f-f3ca-4eee-b46d-98bc98d9e1f7.png "Figure 3: Use Case Diagram")
+![Figure 3: Use Case Diagram](https://user-images.githubusercontent.com/90881345/235277614-afd1f11f-f3ca-4eee-b46d-98bc98d9e1f7.png "Use Case Diagram")
 
 
 ## Sequence Diagram ##
 
 The given image depicts a scenario where a user interacts with a web application to upload an image and provide feedback. The Image Captioning Model then processes the uploaded image to extract relevant features and text, generate corresponding tags, and calculate confidence scores. Upon viewing the results on the web application, the user can offer feedback, which in turn helps to enhance the accuracy of the Image Captioning Model.
 
-![Figure 4: Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png "Figure 4: Sequence Diagram")
+![Figure 4: Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png "Sequence Diagram")
 
 # Implementation #
 
