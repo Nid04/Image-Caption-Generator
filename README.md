@@ -218,39 +218,16 @@ Figure 6: Console
 
 # Appendix #
 
-mysite
+mysite : This is the main project directory
    |-- .DS_Store
-   |-- captionapp
+   |-- captionapp 
    |   |-- .DS_Store
    |   |-- __init__.py
-   |   |-- __pycache__
-   |   |   |-- __init__.cpython-310.pyc
-   |   |   |-- admin.cpython-310.pyc
-   |   |   |-- apps.cpython-310.pyc
-   |   |   |-- forms.cpython-310.pyc
-   |   |   |-- models.cpython-310.pyc
-   |   |   |-- urls.cpython-310.pyc
-   |   |   |-- views.cpython-310.pyc
-   |   |-- admin.py
-   |   |-- apps.py
+   |   |-- admin.py : This is where you register models to include them in the Django administration site—using this site is optional.
+   |   |-- apps.py : This includes the main configuration of the captionapp application.
    |   |-- forms.py
-   |   |-- migrations
-   |   |   |-- 0001_initial.py
-   |   |   |-- 0002_alter_image_caption.py
-   |   |   |-- 0003_alter_image_caption.py
-   |   |   |-- 0004_rename_created_at_image_uploaded_at.py
-   |   |   |-- 0005_rename_caption_image_feedback.py
-   |   |   |-- 0006_remove_image_uploaded_at.py
-   |   |   |-- __init__.py
-   |   |   |-- __pycache__
-   |   |   |   |-- 0001_initial.cpython-310.pyc
-   |   |   |   |-- 0002_alter_image_caption.cpython-310.pyc
-   |   |   |   |-- 0003_alter_image_caption.cpython-310.pyc
-   |   |   |   |-- 0004_rename_created_at_image_uploaded_at.cpython-310.pyc
-   |   |   |   |-- 0005_rename_caption_image_feedback.cpython-310.pyc
-   |   |   |   |-- 0006_remove_image_uploaded_at.cpython-310.pyc
-   |   |   |   |-- __init__.cpython-310.pyc
-   |   |-- models.py
+   |   |-- migrations : This directory will contain database migrations of your application. Migrations allow Django to track your model changes and synchronize the database accordingly.
+   |   |-- models.py : This includes the data models of the application; all Django applications need to have a models.py file, but this file can be left empty.
    |   |-- static
    |   |   |-- .DS_Store
    |   |   |-- css
@@ -259,43 +236,20 @@ mysite
    |   |   |-- base.html
    |   |   |-- upload
    |   |   |   |-- upload.html
-   |   |-- tests.py
+   |   |-- tests.py : This is where we can add tests for the application.
    |   |-- urls.py
-   |   |-- views.py
+   |   |-- views.py : The logic of the application goes here; each view receives an HTTP request, processes it, and returns a response.
    |-- db.sqlite3
-   |-- manage.py
-   |-- media
+   |-- manage.py : This is a command-line utility used to interact with the project.
+   |-- media : All the uploaded images saved inside images folder
    |   |-- images
-   |   |   |-- 146577645_91b570c0d0.jpg
-   |   |   |-- 146577645_91b570c0d0_Nw1Klt1.jpg
-   |   |   |-- 146577645_91b570c0d0_qSIAIIc.jpg
-   |   |   |-- 172097783_292c5413d8.jpg
-   |   |   |-- 172097783_292c5413d8_STjA272.jpg
-   |   |   |-- 172097783_292c5413d8_sJtb2WF.jpg
-   |   |   |-- 58363930_0544844edd.jpg
-   |   |   |-- 58363930_0544844edd_Nb3ePZR.jpg
-   |   |   |-- 58363930_0544844edd_byjVvqD.jpg
-   |   |   |-- 58363930_0544844edd_fPZAVv8.jpg
-   |   |   |-- 58363930_0544844edd_fhFGag2.jpg
-   |   |   |-- 96973080_783e375945.jpg
-   |   |   |-- 96973080_783e375945_H6mupn2.jpg
-   |   |   |-- 96973080_783e375945_LlXlKCn.jpg
-   |   |   |-- IMG_9867.png
-   |   |   |-- photo-1575936123452-b67c3203c357.jpeg
    |-- mysite
-   |   |-- __init__.py
-   |   |-- __pycache__
-   |   |   |-- __init__.cpython-310.pyc
-   |   |   |-- settings.cpython-310.pyc
-   |   |   |-- urls.cpython-310.pyc
-   |   |   |-- wsgi.cpython-310.pyc
-   |   |-- asgi.py
-   |   |-- settings.py
-   |   |-- urls.py
-   |   |-- wsgi.py
-   |-- user_dataset.csv
-requirements.txt
-retrain_model.py
-schedule_retrain.py
-
-
+   |   |-- __init__.py : An empty file that tells Python to treat the mysite directory as a Python module.
+   |   |-- asgi.py : This is the configuration to run the project as ASGI, the emerging Python standard for asynchronous web servers and applications.
+   |   |-- settings.py : This indicates settings and configuration for the project and contains initial default settings.
+   |   |-- urls.py : This is the place where the URL patterns live. Each URL defined here is mapped to a view.
+   |   |-- wsgi.py : This is the configuration to run the project as a Web Server Gateway Interface (WSGI) application.
+   |-- user_dataset.csv : It contains name of the image and the feedback given by the user
+requirements.txt : contains all the required packages
+retrain_model.py : It contains code to retrain the model based on user feedback
+schedule_retrain.py : It contains code to run the retrain_model.py code preodically
