@@ -86,6 +86,7 @@ Figure 3: Use Case Diagram
 The given image depicts a scenario where a user interacts with a web application to upload an image and provide feedback. The Image Captioning Model then processes the uploaded image to extract relevant features and text, generate corresponding tags, and calculate confidence scores. Upon viewing the results on the web application, the user can offer feedback, which in turn helps to enhance the accuracy of the Image Captioning Model.
 
 ![Figure 4: Sequence Diagram](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Sequence_Diagram.png "Sequence Diagram")
+
 Figure 4: Sequence Diagram
 
 # Implementation #
@@ -172,19 +173,23 @@ Figure 6: Console
 
 ## Demo ##
 
-* Screenshot 1:
+* Screenshot 1: A user interface for uploading an image and get caption
 
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232843583-58b35760-5976-47f2-bd01-4a315f43054a.png">
 
-* Screenshot 2:
+* Screenshot 2: After the user has chosen the image for which they would like to generate a caption and click on upload button.
+
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/235280107-2e4b4862-c719-4794-a854-5cd69ca9d611.png">
+
+* Screenshot 3: Upon clicking the upload button, the UI loads the image and generates the corresponding caption at the bottom of the image.
 
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232844510-fe2136e6-6c30-4bf6-a5b7-53412731972b.png">
 
-* Screenshot 3:
+* Screenshot 4: The user has the option to offer feedback for the uploaded image by clicking on the submit button.
 
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853507-e99596f9-1c67-49d1-ae06-18e355053cb5.png">
 
-* Screenshot 4:
+* Screenshot 5: After the user clicks the submit button, the entered data is saved to the dataset. Then, the user will receive a success or failure message indicating whether the submission was completed successfully or not.
 
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853612-625352c4-7818-4d1f-a9d1-075b5281739e.png">
 
