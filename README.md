@@ -66,13 +66,16 @@ The scope of image caption generation can range from generating basic captions t
 
 ## High-level Requirements ##
 
-The high level requirements for an Image Caption generation using AI/ML project are:
+Here are some high-level requirements for an Image Caption Generation project using AI/ML with user feedback:
 
-* Dataset of an image and it's caption: It will be helpful to train and evaluate the model. The large dataset will help to evaluate the relationship between the image and it's caption and can generalize the images as well.
-* ML model: The model will extract feature and generate caption based on the feature.
-* Development environment: It includes the hardware & software which will help to train, evaluate & optimize our model
-* Evaluation & tuning of model
-* Integration of model with large system or an application
+* Datasets of images and their captions: It will be helpful to train and evaluate the model. The large dataset will help to evaluate the relationship between the image and it's caption and can generalize the images as well.
+* Preprocessing: Preprocess the images to normalize their sizes and colors, and extract relevant features for input to the model.
+* Image Caption Generation Model: Design and train a deep learning model, such as a convolutional neural network (CNN) and a recurrent neural network (RNN), to generate captions for the input images.
+* User Feedback Component: Develop a user feedback component that allows users to provide feedback on the generated captions, which can be used to improve the accuracy of the model over time.
+* User Interface: Design an intuitive and user-friendly interface that allows users to easily upload images, view generated captions, and provide feedback.
+* Deployment: Deploy the image caption generation system on a reliable and scalable cloud platform, with the ability to handle large numbers of concurrent users and datasets.
+* Performance: Optimize the model and system performance for fast and accurate image caption generation and feedback processing.
+
 
 ## Use Case Diagram ##
 
