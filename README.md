@@ -208,10 +208,94 @@ Figure 6: Console
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853612-625352c4-7818-4d1f-a9d1-075b5281739e.png">
 
 # References #
+
 1. Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
 2. Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
 3. https://www.kaggle.com/datasets/adityajn105/flickr8k
 4. https://www.kaggle.com/datasets/hsankesara/flickr-image-dataset
 5. https://www.deeplearning.ai/courses/
 6. https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
+
+# Appendix #
+
+mysite
+   |-- .DS_Store
+   |-- captionapp
+   |   |-- .DS_Store
+   |   |-- __init__.py
+   |   |-- __pycache__
+   |   |   |-- __init__.cpython-310.pyc
+   |   |   |-- admin.cpython-310.pyc
+   |   |   |-- apps.cpython-310.pyc
+   |   |   |-- forms.cpython-310.pyc
+   |   |   |-- models.cpython-310.pyc
+   |   |   |-- urls.cpython-310.pyc
+   |   |   |-- views.cpython-310.pyc
+   |   |-- admin.py
+   |   |-- apps.py
+   |   |-- forms.py
+   |   |-- migrations
+   |   |   |-- 0001_initial.py
+   |   |   |-- 0002_alter_image_caption.py
+   |   |   |-- 0003_alter_image_caption.py
+   |   |   |-- 0004_rename_created_at_image_uploaded_at.py
+   |   |   |-- 0005_rename_caption_image_feedback.py
+   |   |   |-- 0006_remove_image_uploaded_at.py
+   |   |   |-- __init__.py
+   |   |   |-- __pycache__
+   |   |   |   |-- 0001_initial.cpython-310.pyc
+   |   |   |   |-- 0002_alter_image_caption.cpython-310.pyc
+   |   |   |   |-- 0003_alter_image_caption.cpython-310.pyc
+   |   |   |   |-- 0004_rename_created_at_image_uploaded_at.cpython-310.pyc
+   |   |   |   |-- 0005_rename_caption_image_feedback.cpython-310.pyc
+   |   |   |   |-- 0006_remove_image_uploaded_at.cpython-310.pyc
+   |   |   |   |-- __init__.cpython-310.pyc
+   |   |-- models.py
+   |   |-- static
+   |   |   |-- .DS_Store
+   |   |   |-- css
+   |   |   |   |-- main.css
+   |   |-- templates
+   |   |   |-- base.html
+   |   |   |-- upload
+   |   |   |   |-- upload.html
+   |   |-- tests.py
+   |   |-- urls.py
+   |   |-- views.py
+   |-- db.sqlite3
+   |-- manage.py
+   |-- media
+   |   |-- images
+   |   |   |-- 146577645_91b570c0d0.jpg
+   |   |   |-- 146577645_91b570c0d0_Nw1Klt1.jpg
+   |   |   |-- 146577645_91b570c0d0_qSIAIIc.jpg
+   |   |   |-- 172097783_292c5413d8.jpg
+   |   |   |-- 172097783_292c5413d8_STjA272.jpg
+   |   |   |-- 172097783_292c5413d8_sJtb2WF.jpg
+   |   |   |-- 58363930_0544844edd.jpg
+   |   |   |-- 58363930_0544844edd_Nb3ePZR.jpg
+   |   |   |-- 58363930_0544844edd_byjVvqD.jpg
+   |   |   |-- 58363930_0544844edd_fPZAVv8.jpg
+   |   |   |-- 58363930_0544844edd_fhFGag2.jpg
+   |   |   |-- 96973080_783e375945.jpg
+   |   |   |-- 96973080_783e375945_H6mupn2.jpg
+   |   |   |-- 96973080_783e375945_LlXlKCn.jpg
+   |   |   |-- IMG_9867.png
+   |   |   |-- photo-1575936123452-b67c3203c357.jpeg
+   |-- mysite
+   |   |-- __init__.py
+   |   |-- __pycache__
+   |   |   |-- __init__.cpython-310.pyc
+   |   |   |-- settings.cpython-310.pyc
+   |   |   |-- urls.cpython-310.pyc
+   |   |   |-- wsgi.cpython-310.pyc
+   |   |-- asgi.py
+   |   |-- settings.py
+   |   |-- urls.py
+   |   |-- wsgi.py
+   |-- user_dataset.csv
+requirements.txt
+retrain_model.py
+schedule_retrain.py
+
 
