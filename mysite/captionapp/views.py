@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import ImageUploadForm
 from .models import Image
-
+import glob
 import os
 import pickle
 import numpy as np
@@ -15,9 +15,23 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.models import load_model
 
 WORKING_DIR = '/Users/nidhi/Desktop/Image Caption Generation Project/Image-Caption-Generation---SYNCHRONY/kaggle/working/'
-with open(os.path.join(WORKING_DIR, 'tokenizer.pkl'), 'rb') as f:
+# checking for the filetype as .pkl
+file_type = '*.pkl'
+# get all the files which is saved with .pkl extension
+files = glob.glob(os.path.join(WORKING_DIR, file_type))
+# get the most recent model
+max_file = max(files, key=os.path.getctime)
+# load the model
+with open(max_file, 'rb') as f:
     tokenizer = pickle.load(f)
-model = load_model(os.path.join(WORKING_DIR, 'best_model.h5'))
+# checking for the file type as .h5
+m_type = '*.h5'
+# get all the files which is saved with h5 extension
+models = glob.glob(os.path.join(WORKING_DIR + m_type))
+# get the most recent model
+recent_model = max(models, key=os.path.getctime)
+# load the model
+model = load_model(recent_model)
 
 # still in progress
 def feedback(request):
