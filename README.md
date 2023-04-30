@@ -218,38 +218,38 @@ Figure 6: Console
 
 # Appendix #
 
-mysite : This is the main project directory
-   |-- .DS_Store
-   |-- captionapp 
-   |   |-- .DS_Store
-   |   |-- __init__.py
-   |   |-- admin.py : This is where you register models to include them in the Django administration site—using this site is optional.
-   |   |-- apps.py : This includes the main configuration of the captionapp application.
-   |   |-- forms.py : 
-   |   |-- migrations : This directory will contain database migrations of your application. Migrations allow Django to track your model changes and synchronize the database accordingly.
-   |   |-- models.py : This includes the data models of the application; all Django applications need to have a models.py file, but this file can be left empty.
-   |   |-- static
-   |   |   |-- .DS_Store
-   |   |   |-- css  
-   |   |   |   |-- main.css
-   |   |-- templates
-   |   |   |-- base.html
-   |   |   |-- upload
-   |   |   |   |-- upload.html
-   |   |-- tests.py : This is where we can add tests for the application.
-   |   |-- urls.py
-   |   |-- views.py : The logic of the application goes here; each view receives an HTTP request, processes it, and returns a response.
-   |-- db.sqlite3
-   |-- manage.py : This is a command-line utility used to interact with the project.
-   |-- media : All the uploaded images saved inside images folder
-   |   |-- images
-   |-- mysite
-   |   |-- __init__.py : An empty file that tells Python to treat the mysite directory as a Python module.
-   |   |-- asgi.py : This is the configuration to run the project as ASGI, the emerging Python standard for asynchronous web servers and applications.
-   |   |-- settings.py : This indicates settings and configuration for the project and contains initial default settings.
-   |   |-- urls.py : This is the place where the URL patterns live. Each URL defined here is mapped to a view.
-   |   |-- wsgi.py : This is the configuration to run the project as a Web Server Gateway Interface (WSGI) application.
-   |-- user_dataset.csv : It contains name of the image and the feedback given by the user
-requirements.txt : contains all the required packages
-retrain_model.py : It contains code to retrain the model based on user feedback
-schedule_retrain.py : It contains code to run the retrain_model.py code preodically
+- mysite: This is the main project directory
+  - .DS_Store
+  - captionapp
+    - .DS_Store
+    - __init__.py
+    - admin.py: This is where you register models to include them in the Django administration site—using this site is optional.
+    - apps.py: This includes the main configuration of the captionapp application.
+    - forms.py
+    - migrations: This directory will contain database migrations of your application. Migrations allow Django to track your model changes and synchronize the database accordingly.
+    - models.py: This includes the data models of the application; all Django applications need to have a models.py file, but this file can be left empty.
+    - static
+      - .DS_Store
+      - css
+        - main.css
+    - templates
+      - base.html
+      - upload
+        - upload.html
+    - tests.py: This is where we can add tests for the application.
+    - urls.py
+    - views.py: The logic of the application goes here; each view receives an HTTP request, processes it, and returns a response.
+  - db.sqlite3
+  - manage.py: This is a command-line utility used to interact with the project.
+  - media: All the uploaded images saved inside images folder
+    - images
+  - mysite
+    - __init__.py: An empty file that tells Python to treat the mysite directory as a Python module.
+    - asgi.py: This is the configuration to run the project as ASGI, the emerging Python standard for asynchronous web servers and applications.
+    - settings.py: This indicates settings and configuration for the project and contains initial default settings.
+    - urls.py: This is the place where the URL patterns live. Each URL defined here is mapped to a view.
+    - wsgi.py: This is the configuration to run the project as a Web Server Gateway Interface (WSGI) application.
+  - user_dataset.csv: It contains name of the image and the feedback given by the user
+- requirements.txt: Contains all the required packages
+- retrain_model.py: It contains code to retrain the model based on user feedback
+- schedule_retrain.py: It contains code to run the retrain_model.py code periodically
