@@ -226,19 +226,19 @@ mysite : This is the main project directory
    |   |-- __init__.py
    |   |-- admin.py : This is where you register models to include them in the Django administration site—using this site is optional.
    |   |-- apps.py : This includes the main configuration of the captionapp application.
-   |   |-- forms.py : 
+   |   |-- forms.py : It is where the django documentation recommends you place all your forms code; to keep your code easily maintainable.
    |   |-- migrations : This directory will contain database migrations of your application. Migrations allow Django to track your model changes and synchronize the database accordingly.
    |   |-- models.py : This includes the data models of the application; all Django applications need to have a models.py file, but this file can be left empty.
-   |   |-- static
+   |   |-- static : contain style sheet
    |   |   |-- .DS_Store
    |   |   |-- css  
    |   |   |   |-- main.css
-   |   |-- templates
-   |   |   |-- base.html
+   |   |-- templates : contain html file
+   |   |   |-- base.html : main template for all the pages
    |   |   |-- upload
-   |   |   |   |-- upload.html
+   |   |   |   |-- upload.html : upload page template
    |   |-- tests.py : This is where we can add tests for the application.
-   |   |-- urls.py
+   |   |-- urls.py : A request in Django first comes to urls.py and then goes to the matching function in views.py
    |   |-- views.py : The logic of the application goes here; each view receives an HTTP request, processes it, and returns a response.
    |-- db.sqlite3
    |-- manage.py : This is a command-line utility used to interact with the project.
