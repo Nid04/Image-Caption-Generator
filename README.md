@@ -39,7 +39,7 @@ Source code repository (Private access): https://github.com/Nid04/Image-Caption-
 8. [References] (#References)
 10. [Appendix] (#Appendix)
 
-# Overview #
+## Overview ##
 Image caption generation is a project in which a machine learning model is trained to generate natural language descriptions of an image. 
 The goal is to create a model that can understand the content of an image and generate a caption that accurately describes it. 
 There are several techniques that can be used for image caption generation, including neural networks and deep learning. 
