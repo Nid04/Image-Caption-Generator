@@ -29,15 +29,15 @@ Project Management board (Private access): https://trello.com/b/nzILGiVw/image-c
 Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
 
 # Table of Content #
-1. Overview (#Overview)
-2. Background
-3. Project Context and Scope
-4. High-Level Requirements
-5. Use case Diagram
-6. Sequence Diagram
-7. Implementation
-8. References
-9. Appendix
+1. [Overview] (#Overview)
+2. [Background] (#Background)
+3. [Project Context and Scope] (#Project Context & Scope)
+4. [High-Level Requirements] (#High-level Requirements)
+5. [Use case Diagram] (#Use Case Diagram)
+6. [Sequence Diagram] (#Sequence Diagram)
+7. [Implementation] (#Implementation)
+8. [References] (#References)
+10. [Appendix] (#Appendix)
 
 # Overview #
 Image caption generation is a project in which a machine learning model is trained to generate natural language descriptions of an image. 
