@@ -29,7 +29,7 @@ Project Management board (Private access): https://trello.com/b/nzILGiVw/image-c
 Source code repository (Private access): https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/
 
 # Table of Content #
-1. Overview
+1. Overview (#Overview)
 2. Background
 3. Project Context and Scope
 4. High-Level Requirements
@@ -47,7 +47,8 @@ The project involves utilizing a convolutional neural network (CNN) to extract f
 
 # Background #
 
-In many articles such as Image Captioning - A Deep Learning Approach [1], Artificial Intelligence Based Image Caption Generation [2], etc used the CNN-LSTM architecture for Image Caption Generation model. In which the CNN is used for recognition and classification of an image where as LSTM is capable of sequence prediction problem which identifies the next word.
+Many articles, such as Image Captioning - A Deep Learning Approach [1], and Artificial Intelligence Based Image Caption Generation [2],  use the CNN-LSTM architecture for the Image Caption Generation model. In these works, the CNN model is used for the recognition and classification of an image whereas LSTM is capable of sequence prediction problem which identifiesthe next word.
+
 
 **Basic of Image Captions**
 
