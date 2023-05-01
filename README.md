@@ -39,13 +39,13 @@ Source code repository (Private access): https://github.com/Nid04/Image-Caption-
 8. [References] (#References)
 10. [Appendix] (#Appendix)
 
-## Overview ##
+## Overview
 Image caption generation is a project in which a machine learning model is trained to generate natural language descriptions of an image. 
 The goal is to create a model that can understand the content of an image and generate a caption that accurately describes it. 
 There are several techniques that can be used for image caption generation, including neural networks and deep learning. 
 The project involves utilizing a convolutional neural network (CNN) to extract features from an image and a recurrent neural network (RNN) to generate a caption. Upon completion of training, the model can then be used to generate captions for new images.
 
-# Background #
+## Background
 
 Many articles, such as Image Captioning - A Deep Learning Approach [1], and Artificial Intelligence Based Image Caption Generation [2],  use the CNN-LSTM architecture for the Image Caption Generation model. In these works, the CNN model is used for the recognition and classification of an image whereas LSTM is capable of sequence prediction problem which identifiesthe next word.
 
@@ -70,13 +70,13 @@ The model consist of 3 different stages:
 After successful generation of model will train the model on Flicker-8k dataset which have more that 8000 images and it's caption. Once the model is trained will test the model to generate the caption for new images and evaluate it with the actually caption for the image. In order to evaluate the machine translated text will use BLEU (Bilingual Evaluation). It lies between 0 to 1, where 0 means the generated caption doesn't overlap with the refernce text (low quality) and 1 means it perfectly overlap with the reference text (high quality). In the above article, the machine generated text was 60 to 70 percent accurate.
 
 
-# Project Context & Scope #
+## Project Context & Scope
 
 The primary motivation for image caption generation is to enhance the accessibility and usability of visual content, especially for individuals with visual impairments. It can also be used to assist in content indexing and retrieval, as well as providing descriptive information for images in online publications, social media, and e-commerce websites.
 
 The scope of image caption generation can range from generating basic captions that describe the content of an image to generating detailed and contextualized captions that convey emotions and sentiments. The applications can also vary, from educational and instructional content to entertainment and social media sharing. Overall, the image caption generation technology has the potential to improve the user experience and accessibility of visual content across various domains.
 
-## High-level Requirements ##
+## High-level Requirements 
 
 Here are some high-level requirements for an Image Caption Generation project using AI/ML with user feedback:
 
@@ -89,14 +89,14 @@ Here are some high-level requirements for an Image Caption Generation project us
 * Performance: Optimize the model and system performance for fast and accurate image caption generation and feedback processing.
 
 
-## Use Case Diagram ##
+## Use Case Diagram
 
 In the provided diagram, users have the option to submit an image and receive corresponding outcomes, as well as provide feedback on the results. By utilizing the "Upload Image" use case, users can upload their desired image, while the "Give Feedback" use case enables them to offer feedback on the generated tags. The "Display Output" use case displays the generated tags and corresponding confidence scores. The algorithm utilizes the image to extract relevant features and text, and can learn from user comments to improve its performance.
 
 ![Figure 3: Use Case Diagram](https://user-images.githubusercontent.com/90881345/235277614-afd1f11f-f3ca-4eee-b46d-98bc98d9e1f7.png "Use Case Diagram")
 Figure 3: Use Case Diagram
 
-## Sequence Diagram ##
+## Sequence Diagram 
 
 The given image depicts a scenario where a user interacts with a web application to upload an image and provide feedback. The Image Captioning Model then processes the uploaded image to extract relevant features and text, generate corresponding tags, and calculate confidence scores. Upon viewing the results on the web application, the user can offer feedback, which in turn helps to enhance the accuracy of the Image Captioning Model.
 
@@ -104,7 +104,7 @@ The given image depicts a scenario where a user interacts with a web application
 
 Figure 4: Sequence Diagram
 
-# Implementation #
+## Implementation 
 
 The project comprises of two primary components: one focuses on developing and training the image caption generation model, while the other concentrates on designing the user feedback component.
 
@@ -208,7 +208,7 @@ Figure 6: Console
 
 <img width="843" alt="image" src="https://user-images.githubusercontent.com/90881345/232853612-625352c4-7818-4d1f-a9d1-075b5281739e.png">
 
-# References #
+## References 
 
 1. Image Captioning - A Deep Learning Approach: http://www.ripublication.com/ijaer18/ijaerv13n9_102.pdf
 2. Artificial Intelligence Based Image Caption Generation: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3648847
@@ -217,7 +217,7 @@ Figure 6: Console
 5. https://www.deeplearning.ai/courses/
 6. https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/
 
-# Appendix #
+## Appendix 
 
 <pre>
 mysite : This is the main project directory
