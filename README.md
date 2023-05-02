@@ -32,7 +32,7 @@ Source code repository (Private access): https://github.com/Nid04/Image-Caption-
 1. [Overview](#Overview)
 2. [Background](#Background)
 3. [Project Context and Scope](#project-context--scope)
-4. [High-Level Requirements](#High-level Requirements)
+4. [High-Level Requirements](#high-level-requirements)
 5. [Use case Diagram](#Use Case Diagram)
 6. [Sequence Diagram](#Sequence Diagram)
 7. [Implementation](#Implementation)
