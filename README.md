@@ -31,7 +31,7 @@ Source code repository (Private access): https://github.com/Nid04/Image-Caption-
 # Table of Content #
 1. [Overview](#Overview)
 2. [Background](#Background)
-3. [Project Context and Scope](#Project Context & Scope)
+3. [Project Context and Scope](#project-context--scope)
 4. [High-Level Requirements](#High-level Requirements)
 5. [Use case Diagram](#Use Case Diagram)
 6. [Sequence Diagram](#Sequence Diagram)
