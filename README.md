@@ -73,7 +73,6 @@ After successful generation of model will train the model on Flicker-8k dataset 
 
 ## Project Context & Scope
 
-<a name="Project Context & Scope"></a>
 The primary motivation for image caption generation is to enhance the accessibility and usability of visual content, especially for individuals with visual impairments. It can also be used to assist in content indexing and retrieval, as well as providing descriptive information for images in online publications, social media, and e-commerce websites.
 
 The scope of image caption generation can range from generating basic captions that describe the content of an image to generating detailed and contextualized captions that convey emotions and sentiments. The applications can also vary, from educational and instructional content to entertainment and social media sharing. Overall, the image caption generation technology has the potential to improve the user experience and accessibility of visual content across various domains.
