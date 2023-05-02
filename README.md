@@ -12,7 +12,7 @@ Instructor(s):
 
 ## Software Engineering Project 
 
-# Image Caption Generation using AI/ML with User Feedback
+## Project Title: Image Caption Generation using AI/ML with User Feedback
 
 ## Student Name: Nidhi Sinha (sinhan1@udayton.edu)
 
@@ -59,7 +59,7 @@ Figure 1: Basic of Image Captions
 **Model Architecture Overview**
 
 ![Figure 2: Architecture of Captioning](https://github.com/Nid04/Image-Caption-Generation---SYNCHRONY/blob/main/Image%20files/Img2.png "Architecture of Captioning")
-Figure 2: Architecture of Captioning
+Figure 2: Architecture of Image Captioning Model
 
 The model consist of 3 different stages:
 * Image Feature Extraction: In this stage the feature of an image is extracted by using VGG16 model. VGG16 is a working model for image detection. it consist of 16 layer which includes a pattern of 2 convolution layer and 1 dropout layer, it's fully connected at the end.
