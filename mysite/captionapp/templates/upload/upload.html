@@ -1,14 +1,50 @@
 {% extends "base.html" %}
 {% load static %}
+<link rel="stylesheet" href="{% static 'dropzone.css' %}">
+<script src="{% static 'dropzone.js' %}"></script>
   {% block content %}
 
     <div class="container">
       <div class="align">
-        <form id="upload-form" method="post" enctype="multipart/form-data" class="mt-5">
-          {% csrf_token %}
-          {{ form.image }}
-          <button type="submit" class="rounded-border value={{execute_ts}}">Upload</button>
-        </form>
+        <div class="my-dropzone">
+          <form id="upload-form" method="post" enctype="multipart/form-data" class="mt-5">
+            {% csrf_token %}
+            {{ form.image }}
+            <button type="submit" class="rounded-border value={{execute_ts}}">Upload</button>
+          </form>
+        </div>
+
+        <script>
+          Dropzone.options.uploadForm = {
+            paramName: "image",
+            maxFilesize: 10, // MB
+            maxFiles: 1,
+            dictDefaultMessage: "Drop files here or click to upload.",
+            autoProcessQueue: false,
+            init: function() {
+              var submitButton = document.querySelector("button[type=submit]");
+              myDropzone = this;
+        
+              submitButton.addEventListener("click", function() {
+                myDropzone.processQueue();
+              });
+        
+              this.on("sending", function(file, xhr, formData) {
+                formData.append("csrfmiddlewaretoken", "{{ csrf_token }}");
+              });
+        
+              this.on("success", function(file, response) {
+                console.log("File uploaded successfully");
+                // Perform any additional actions here if needed
+              });
+        
+              this.on("error", function(file, response) {
+                console.log("Error uploading file");
+                // Handle errors here
+              });
+            }
+          };
+        </script>
         <form id="feedback-form" method="post" enctype="multipart/form-data" class="mt-5">
           {% csrf_token %}
           <input type="hidden" id="image-filename" name="image_filename" value="{% if img_obj %}{{ img_obj.image }}{% endif %}">
@@ -16,11 +52,7 @@
           <input type="text" id="feedback" name="feedback" size="35">
           <input id="submit-feedback" type="submit" value="Submit">
           <input type="reset" id="reset-button">
-          <div class="feedback-buttons">
-            <button id="thumbs-up" type="button">👍</button>
-            <button id="thumbs-down" type="button">👎</button>
-        </div>
-      </form>
+        </form>
       </div>
       <center>
         {% if img_obj %}
