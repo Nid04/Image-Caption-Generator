@@ -29,12 +29,12 @@ Many articles, such as Image Captioning - A Deep Learning Approach [1], and Arti
 
 **Basic of Image Captions**
 
-![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-generator---SYNCHRONY/blob/main/Image%20files/Img1.png "Basic of Image Captions")
+![Figure 1: Basic of Image Captions](https://github.com/Nid04/Image-Caption-generator/blob/main/Image%20files/Img1.png "Basic of Image Captions")
 Figure 1: Basic Architecture of Image Caption generator Model
 
 **Model Architecture Overview**
 
-![Figure 2: Architecture of Captioning](https://github.com/Nid04/Image-Caption-generator---SYNCHRONY/blob/main/Image%20files/Img2.png "Architecture of Captioning")
+![Figure 2: Architecture of Captioning](https://github.com/Nid04/Image-Caption-generator/blob/main/Image%20files/Img2.png "Architecture of Captioning")
 Figure 2: Architecture of Image Caption generator Model
 
 The model consist of 3 different stages:
@@ -77,7 +77,7 @@ Figure 3: Use Case Diagram
 
 The given image depicts a scenario where a user interacts with a web application to upload an image and provide feedback. The Image Captioning Model then processes the uploaded image to extract relevant features and text, generate corresponding tags, and calculate confidence scores. Upon viewing the results on the web application, the user can offer feedback, which in turn helps to enhance the accuracy of the Image Captioning Model.
 
-![Figure 4: Sequence Diagram](https://github.com/Nid04/Image-Caption-generator---SYNCHRONY/blob/main/Sequence_Diagram.png "Sequence Diagram")
+![Figure 4: Sequence Diagram](https://github.com/Nid04/Image-Caption-generator/blob/main/Sequence_Diagram.png "Sequence Diagram")
 
 Figure 4: Sequence Diagram
 
