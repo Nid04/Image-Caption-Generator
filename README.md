@@ -1,8 +1,4 @@
-## Software Engineering Project 
-
-## Project Title: Image Caption generator using AI/ML with User Feedback
-
-## Name: Nidhi Sinha
+## Image Caption generator using AI/ML with User Feedback
 
 # Table of Content #
 1. [Overview](#Overview)
